@@ -1,0 +1,65 @@
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\ApplicationInsights.config
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\roslyn\csc.exe
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\roslyn\System.Collections.Immutable.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\roslyn\vbc.exe
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\roslyn\VBCSCompiler.exe
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\roslyn\VBCSCompiler.exe.config
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\JQueryProject 37.dll.config
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\JQueryProject 37.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\JQueryProject 37.pdb
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.Web.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.WindowsServer.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\Microsoft.ApplicationInsights.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.Web.xml
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.WindowsServer.xml
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\Microsoft.ApplicationInsights.xml
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\obj\Debug\JQueryProject 37.csprojResolveAssemblyReference.cache
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\obj\Debug\JQueryProject 37.dll
+c:\users\mohamed badr\documents\visual studio 2015\Projects\JQueryProject 37\JQueryProject 37\obj\Debug\JQueryProject 37.pdb
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\ApplicationInsights.config
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\roslyn\csc.exe
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\roslyn\System.Collections.Immutable.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\roslyn\System.Reflection.Metadata.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\roslyn\vbc.exe
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\roslyn\VBCSCompiler.exe
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\roslyn\VBCSCompiler.exe.config
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\JQueryProject 37.dll.config
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\JQueryProject 37.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\JQueryProject 37.pdb
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.Agent.Intercept.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.DependencyCollector.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.Web.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.WindowsServer.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Microsoft.ApplicationInsights.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.DependencyCollector.xml
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.Web.xml
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.WindowsServer.xml
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Microsoft.ApplicationInsights.xml
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\obj\Debug\JQueryProject 37.dll
+D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\obj\Debug\JQueryProject 37.pdb
