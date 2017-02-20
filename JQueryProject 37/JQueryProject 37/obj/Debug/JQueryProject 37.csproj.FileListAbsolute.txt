@@ -63,3 +63,36 @@ D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Micros
 D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\obj\Debug\JQueryProject 37.dll
 D:\JQuery Project\JQuery-Project-37\JQueryProject 37\JQueryProject 37\obj\Debug\JQueryProject 37.pdb
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\ApplicationInsights.config
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\roslyn\csc.exe
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\roslyn\vbc.exe
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\roslyn\VBCSCompiler.exe
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\JQueryProject 37.dll.config
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\JQueryProject 37.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\JQueryProject 37.pdb
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.Web.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.Web.xml
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\obj\Debug\JQueryProject 37.csprojResolveAssemblyReference.cache
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\obj\Debug\JQueryProject 37.dll
+C:\Users\Abdelazim\Source\Repos\JQueryProject\JQueryProject 37\JQueryProject 37\obj\Debug\JQueryProject 37.pdb

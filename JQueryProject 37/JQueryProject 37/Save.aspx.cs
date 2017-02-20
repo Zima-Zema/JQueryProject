@@ -14,12 +14,29 @@ public partial class Save : System.Web.UI.Page
     {
 
     }
+    //[System.Web.Services.WebMethod]
+    //public static string GetCurrentTime(string name)
+    //{
+    //    return "Hello " + name + Environment.NewLine + "The Current Time is: "
+    //        + DateTime.Now.ToString();
+    //}
+
+
     [System.Web.Services.WebMethod]
-    public static string GetCurrentTime(string name)
+    public static string GetCurrentTime()
     {
-        return "Hello " + name + Environment.NewLine + "The Current Time is: "
-            + DateTime.Now.ToString();
+        return DateTime.Now.ToString("HH:mm:ss");
     }
+
+    [System.Web.Services.WebMethod]
+    public static string GetCurrentDate()
+    {
+        return DateTime.Now.ToString("yyyy-MM-dd");
+    }
+
+
+
+
     [System.Web.Services.WebMethod]
     //[ScriptMethod(ResponseFormat = ResponseFormat.Xml)]
     public static string WriteXML(string xmlStr, string path)
@@ -27,6 +44,16 @@ public partial class Save : System.Web.UI.Page
         string filepath = System.Web.HttpContext.Current.Server.MapPath("./" + path);
         XmlDocument doc = new XmlDocument();
         doc.LoadXml(xmlStr);
+        //var dates = doc.FirstChild.ChildNodes;
+        //foreach (XmlNode date in dates) {
+        //    if (date.Attributes[0].ToString() == DateTime.Now.ToString("yyyy-MM-dd"))
+        //    {
+        //        return "found";
+        //    }
+        //    else {
+        //        return "notfound";
+        //    }
+        //}
         doc.Save(filepath);
         return "ok";
     }

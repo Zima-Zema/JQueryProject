@@ -94,8 +94,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="attendanceBook.xml" />
+    <Content Include="empData.txt" />
     <Content Include="EmployeeReport.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\FlameViewportScale.js" />
+    <Content Include="js\jquery.animate-enhanced.min.js" />
+    <Content Include="js\jquery.easing.1.3.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.superslides.min.js" />
+    <Content Include="js\jquery.tosrus.min.all.js" />
+    <Content Include="js\queryloader2.min.js" />
+    <Content Include="js\slick.min.js" />
+    <Content Include="js\wow.min.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -103,6 +116,9 @@
     <Content Include="ShowAbsence.aspx" />
     <Content Include="ShowAttendance.aspx" />
     <Content Include="Site1.Master" />
+    <None Include="empSchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -174,7 +190,6 @@
     <Folder Include="DOCUMENTATION\" />
     <Folder Include="fonts\" />
     <Folder Include="img\" />
-    <Folder Include="js\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
