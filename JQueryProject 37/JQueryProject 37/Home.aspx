@@ -8,30 +8,17 @@
             //visaual effects 
             $("#lihome").addClass("active");
             $("#imgBannertext").html("Home");
-
             //jquery code
             var time;
-            var date;
+            var date1="";
             var reponse;
-            getDate()
+            getDate();
+            $("#sendmessage").hide();
             intervalid = setInterval(function () {
                 var now = new Date();
                 $("#date").val(now.toLocaleTimeString('en-GB'));
             }, 1000);
             function getDate() {
-                //$.ajax({
-                //    type: "POST",
-                //    url: "Save.aspx/GetCurrentTime",
-                //    data: "{}",
-                //    contentType: "application/json; charset=utf-8",
-                //    dataType: "json",
-                //    success: function (msg) {
-                //        time = msg.d;
-                //    },
-                //    error: function (r) {
-                //        alert("error");
-                //    }
-                //});
                 $.ajax({
                     type: "POST",
                     url: "Save.aspx/GetCurrentDate",
@@ -39,8 +26,7 @@
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     success: function (msg) {
-                        date = msg.d;
-
+                        date1 = msg.d;
                     },
                     error: function (r) {
                         alert("error");
@@ -77,37 +63,65 @@
             });
             
             $("#btn_Save").on("click", function () {
-                var dayDate=$.trim(date);
+                var dayDate = $.trim(date1);
                 var empId=$.trim($("#empId").val());
                 var empName=$("#empName option:selected").text();
                 var aTime = $.trim($("#date").val());
-                var lTime = $.trim($("#date").val());
+                var lTime = 0;
                 var status = $("#attendaceType option:selected").text();
-                var txt = $(m).find("attendanceBook").html();    
-                alert("<currentDate>" + dayDate + "</currentDate><employeeNo>" + empId + "</employeeNo>");
-                for (i = 0; i < $(m).find("attendanceBook").children.length-1; i++) {
-                    var xmldate = $.trim($(m).find("attendanceBook").find("employee").eq(i).find("currentDate").html());
-                    var employeNUM = $.trim($(m).find("attendanceBook").find("employee").eq(i).find("employeeNo").html());
-                    var arrivaltime = $.trim($(m).find("attendanceBook").find("employee").eq(i).find("arrivalTime").html());
-                    var leavetime = $.trim($(m).find("attendanceBook").find("employee").eq(i).find("leaveTime").html());
-                    alert(xmldate + '*' + dayDate);
-                    if (status == "Attendance" && empId != employeNUM && xmldate==dayDate && aTime==null) {
-                        lTime = 0;
-                        var employee = "<employee><time>" + $("#date").val() + "</time><currentDate>" + dayDate + "</currentDate><employeeNo>" + empId + "</employeeNo><employeName>" + empName + "</employeName><arrivalTime>" + aTime + "</arrivalTime><leaveTime>" + lTime + "</leaveTime><totalHours>0</totalHours></employee>";
+                var txt = $(m).find("attendanceBook").html();
+                var employee;
+                if (status == "Attendance") {
+                    var found = 1;
+                    if ($(m).find("employee").length == 0) {
+                        employee = " <employee><currentDate>" + dayDate + "</currentDate><employeeNo>" + empId + "</employeeNo><employeName>" + empName + "</employeName><arrivalTime>" + aTime + "</arrivalTime><leaveTime>" + lTime + "</leaveTime><totalHours>" + 0 + "</totalHours></employee>";
+                        found = 0;
                     }
-                    else if (status == "Attendance" && empId == employeNUM && arrivaltime != null && xmldate == dayDate) {
-                        alert("attend before");
-                        //$("$sendmessage").val("Employee had attended before");
-                    }
-                    else if (status == "Leave" && xmldate == dayDate && arrivaltime != null && empId == employeNUM && leavetime=='0') {
-                        alert("leaved");
-                        lTime = $("#date").val();
-                    }
-                    else if (status == "Leave" && xmldate == dayDate && arrivaltime != null && leavetime != null) {
-                        alert("didn't come");
-                        //$("#lblst").text = "Employee doesn't have any attendence today!! ";
-                    }
+                    else {
+                        $(m).find("employee").each(function (index) {
+                            {
+                                var date = $.trim($(this).children("currentDate").text());
+                                var id = $.trim($(this).children("employeeNo").text());
+                                if (dayDate == date && empId == id) {
+                                    $("#errormessage").text("Employee " + empName + " Can't Attend twice Aday");
+                                    $("#errormessage").addClass("navbar-brand");
+                                    found = 0;
+                                    return;
+                                }
+                            }
+                        });
+                        alert(found);
+                        if (found !== 0) {
+                            employee = " <employee><currentDate>" + dayDate + "</currentDate><employeeNo>" + empId + "</employeeNo><employeName>" + empName + "</employeName><arrivalTime>" + aTime + "</arrivalTime><leaveTime>" + lTime + "</leaveTime><totalHours>" + 0 + "</totalHours></employee>";
+                        }
+                    };
                 }
+                else {
+
+                }
+                //for (i = 0; i < $(m).find("attendanceBook").children.length-1; i++) {
+                //    var xmldate = $.trim($(m).find("attendanceBook").find("employee").eq(i).find("currentDate").html());
+                //    var employeNUM = $.trim($(m).find("attendanceBook").find("employee").eq(i).find("employeeNo").html());
+                //    var arrivaltime = $.trim($(m).find("attendanceBook").find("employee").eq(i).find("arrivalTime").html());
+                //    var leavetime = $.trim($(m).find("attendanceBook").find("employee").eq(i).find("leaveTime").html());
+                //    alert(xmldate + '*' + dayDate);
+                //    if (status == "Attendance" && empId != employeNUM && xmldate==dayDate && aTime==null) {
+                //        lTime = 0;
+                //        var employee = "<employee><time>" + $("#date").val() + "</time><currentDate>" + dayDate + "</currentDate><employeeNo>" + empId + "</employeeNo><employeName>" + empName + "</employeName><arrivalTime>" + aTime + "</arrivalTime><leaveTime>" + lTime + "</leaveTime><totalHours>0</totalHours></employee>";
+                //    }
+                //    else if (status == "Attendance" && empId == employeNUM && arrivaltime != null && xmldate == dayDate) {
+                //        alert("attend before");
+                //        //$("$sendmessage").val("Employee had attended before");
+                //    }
+                //    else if (status == "Leave" && xmldate == dayDate && arrivaltime != null && empId == employeNUM && leavetime=='0') {
+                //        alert("leaved");
+                //        lTime = $("#date").val();
+                //    }
+                //    else if (status == "Leave" && xmldate == dayDate && arrivaltime != null && leavetime != null) {
+                //        alert("didn't come");
+                //        //$("#lblst").text = "Employee doesn't have any attendence today!! ";
+                //    }
+                //}
                 
                 $(m).find("attendanceBook").append(employee);
                 var obj = {};
