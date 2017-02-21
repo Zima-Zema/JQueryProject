@@ -3,8 +3,16 @@
     <currentDate>2017-02-21</currentDate>
     <employeeNo>1</employeeNo>
     <employeName>Mohamed Badr</employeName>
-    <arrivalTime>14:19:36</arrivalTime>
-    <leaveTime>0</leaveTime>
+    <arrivalTime>14:45:00</arrivalTime>
+    <leaveTime>14:45:09</leaveTime>
+    <totalHours>0</totalHours>
+  </employee>
+  <employee>
+    <currentDate>2017-02-21</currentDate>
+    <employeeNo>2</employeeNo>
+    <employeName>Ali Ahmed</employeName>
+    <arrivalTime>14:46:40</arrivalTime>
+    <leaveTime>14:46:51</leaveTime>
     <totalHours>0</totalHours>
   </employee>
 </attendanceBook>

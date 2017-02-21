@@ -76,6 +76,8 @@
                     if ($(m).find("employee").length == 0) {
                         employee = " <employee><currentDate>" + dayDate + "</currentDate><employeeNo>" + empId + "</employeeNo><employeName>" + empName + "</employeName><arrivalTime>" + aTime + "</arrivalTime><leaveTime>" + lTime + "</leaveTime><totalHours>" + 0 + "</totalHours></employee>";
                         found = 0;
+                        $("#sendmessage").show();
+                        $("#errormessage").hide();
                     }
                     else {
                         $(m).find("employee").each(function (index) {
@@ -83,22 +85,44 @@
                                 var date = $.trim($(this).children("currentDate").text());
                                 var id = $.trim($(this).children("employeeNo").text());
                                 if (dayDate == date && empId == id) {
-                                    $("#errormessage").text("Employee " + empName + " Can't Attend twice Aday");
-                                    $("#errormessage").addClass("navbar-brand");
+                                    $("#errormessage").text("Employee " + empName + " Can't Attend twice Aday").addClass("navbar-brand").show();
+                                    $("#sendmessage").hide();
                                     found = 0;
                                     return;
                                 }
                             }
-
                         });
                         alert(found);
                         if (found !== 0) {
                             employee = " <employee><currentDate>" + dayDate + "</currentDate><employeeNo>" + empId + "</employeeNo><employeName>" + empName + "</employeName><arrivalTime>" + aTime + "</arrivalTime><leaveTime>" + lTime + "</leaveTime><totalHours>" + 0 + "</totalHours></employee>";
+                            $("#sendmessage").show();
+                            $("#errormessage").hide();
                         }
                     };
                 }
                 else {
+                    $(m).find("employee").each(function (index) {
+                        var date = $(this).children("currentDate").text();
+                        var id = $(this).children("employeeNo").text();
+                        var leaveTime = $(this).children("leaveTime").text();
 
+                        if (dayDate == date && empId == id && leaveTime == 0) {
+                            var lTme = aTime;
+                            var leave = $(this).find("leaveTime").text(lTme);
+                            $("#sendmessage").text("Your leaving data is set. Thank you").show();
+                            $("#errormessage").hide();
+                        }
+                        else if (dayDate == date && empId == id && leave != 0) {
+                            $("#errormessage").text("Employee named " + empName + " Can't Leave More than Once !!").show();
+                            $("#sendmessage").hide();
+                            return;
+                        }
+                        else {
+                            $("#errormessage").text("Employee named " + $("#empname").val() + " Has not attended So You Can't Save Leave Time for Him !!").show();
+                            $("#sendmessage").hide();
+                            return;
+                        }
+                    });
                 }
                 //for (i = 0; i < $(m).find("attendanceBook").children.length-1; i++) {
                 //    var xmldate = $.trim($(m).find("attendanceBook").find("employee").eq(i).find("currentDate").html());
@@ -161,7 +185,7 @@
                                     <div class="row">
                                         <div class="col-lg-8 col-md-offset-2">
                                             <div class="form-wrapper marginbot-50">
-                                                <div id="sendmessage">Your Data has been sent. Thank you!</div>
+                                                <div id="sendmessage">Your Data has been set. Thank you!</div>
                                                 <div id="errormessage"></div>
                                                 <form id="form1" method="post"  class="contactForm">
                                                     <div class="form-group">
