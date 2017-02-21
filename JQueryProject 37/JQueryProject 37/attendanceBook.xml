@@ -1,47 +1,18 @@
 <attendanceBook>
   <employee>
-    <time>05:01:40</time>
-    <currentDate>2017-02-20</currentDate>
+    <currentDate>2017-02-21</currentDate>
+    <employeeNo>1</employeeNo>
+    <employeName>Mohamed Badr</employeName>
+    <arrivalTime>14:45:00</arrivalTime>
+    <leaveTime>14:45:09</leaveTime>
+    <totalHours>0</totalHours>
+  </employee>
+  <employee>
+    <currentDate>2017-02-21</currentDate>
     <employeeNo>2</employeeNo>
     <employeName>Ali Ahmed</employeName>
-    <arrivalTime>05:01:40</arrivalTime>
-    <leaveTime>0</leaveTime>
-    <totalHours>0</totalHours>
-  </employee>
-  <employee>
-    <time>05:02:59</time>
-    <currentDate>2017-02-20</currentDate>
-    <employeeNo>1</employeeNo>
-    <employeName>Mohamed Badr</employeName>
-    <arrivalTime>05:02:59</arrivalTime>
-    <leaveTime>0</leaveTime>
-    <totalHours>0</totalHours>
-  </employee>
-  <employee>
-    <time>05:03:23</time>
-    <currentDate>2017-02-20</currentDate>
-    <employeeNo>3</employeeNo>
-    <employeName>Sara Mohamed</employeName>
-    <arrivalTime>05:03:23</arrivalTime>
-    <leaveTime>0</leaveTime>
-    <totalHours>0</totalHours>
-  </employee>
-  <employee>
-    <time>05:05:03</time>
-    <currentDate>2017-02-20</currentDate>
-    <employeeNo>1</employeeNo>
-    <employeName>Mohamed Badr</employeName>
-    <arrivalTime>05:05:03</arrivalTime>
-    <leaveTime>0</leaveTime>
-    <totalHours>0</totalHours>
-  </employee>
-  <employee>
-    <time>05:08:17</time>
-    <currentDate>2017-02-20</currentDate>
-    <employeeNo>3</employeeNo>
-    <employeName>Sara Mohamed</employeName>
-    <arrivalTime>05:08:17</arrivalTime>
-    <leaveTime>0</leaveTime>
+    <arrivalTime>14:46:40</arrivalTime>
+    <leaveTime>14:46:51</leaveTime>
     <totalHours>0</totalHours>
   </employee>
 </attendanceBook>
