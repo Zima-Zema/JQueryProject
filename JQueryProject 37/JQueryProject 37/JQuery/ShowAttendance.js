@@ -25,6 +25,7 @@
     $("#empData").hide();
     $("#btn_Find").on("click", function (event) {
         $("#empData > tbody").empty();
+        $("#empData").hide();
         var date = $("#date").val();
         $(m).find("employee").each(function (index) {
             var Xmldate = $.trim($(this).children("currentDate").text());
