@@ -39,7 +39,7 @@
             }
         }
     });
-
+    
     $("#empName").change(function () {
         $("#empId").val($("#empName option:selected").val());
     });
