@@ -2,6 +2,24 @@
     //visualization
     $("#liattend").addClass("active");
     $("#imgBannertext").html("Show Attendance");
+    $.ajax({
+        type: "POST",
+        url: "Save.aspx/GetCurrentDate",
+        data: "{}",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (msg) {
+            $("#date").val(msg.d);
+        },
+        error: function (r) {
+            alert("error");
+        }
+    });
+    
+
+
+
+
     //code
     function timeToSeconds(time) {
         timeArray = time.split(':')

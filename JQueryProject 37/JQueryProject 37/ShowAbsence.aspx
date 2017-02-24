@@ -9,6 +9,21 @@
             //visualization
             $("#liabsense").addClass("active");
             $("#imgBannertext").html("Show Absence");
+            //visualization
+            //Zima the default data displayed for today #required 
+            $.ajax({
+                type: "POST",
+                url: "Save.aspx/GetCurrentDate",
+                data: "{}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (msg) {
+                    $("#date").val(msg.d);
+                },
+                error: function (r) {
+                    alert("error");
+                }
+            });
             //code
             
             var data;
