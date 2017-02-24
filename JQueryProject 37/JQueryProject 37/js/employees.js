@@ -49,13 +49,28 @@
         url: "attendanceBook.xml",
         success: function (res) {
             m = res;
-            //console.log($(m).find("attendanceBook").find("employee").html());
         },
         error: function () {
             alert("error");
         }
     });
-
+    function timeToSeconds(time) {
+        timeArray = time.split(':')
+        var minutes = (timeArray[0] * 60) + (timeArray[1] * 1);
+        var seconds = (minutes * 60) + (timeArray[2] * 1);
+        return seconds;
+    }
+    function secondsToTime(secs) {
+        var hours = Math.floor(secs / (60 * 60));
+        hours = hours < 10 ? '0' + hours : hours;
+        var divisor_for_minutes = secs % (60 * 60);
+        var minutes = Math.floor(divisor_for_minutes / 60);
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        var divisor_for_seconds = divisor_for_minutes % 60;
+        var seconds = Math.ceil(divisor_for_seconds);
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+        return hours + ':' + minutes + ':' + seconds;
+    }
     $("#btn_Save").on("click", function () {
         var dayDate = $.trim(date1);
         var empId = $.trim($("#empId").val());
@@ -65,8 +80,8 @@
         var status = $("#attendaceType option:selected").text();
         var txt = $(m).find("attendanceBook").html();
         var employee;
+        var found = 1;
         if (status == "Attendance") {
-            var found = 1;
             if ($(m).find("employee").length == 0) {
                 employee = " <employee><currentDate>" + dayDate + "</currentDate><employeeNo>" + empId + "</employeeNo><employeName>" + empName + "</employeName><arrivalTime>" + aTime + "</arrivalTime><leaveTime>" + lTime + "</leaveTime><totalHours>" + 0 + "</totalHours></employee>";
                 found = 0;
@@ -79,6 +94,7 @@
                         var date = $.trim($(this).children("currentDate").text());
                         var id = $.trim($(this).children("employeeNo").text());
                         if (dayDate == date && empId == id) {
+                            alert(id);
                             $("#errormessage").text("Employee " + empName + " Can't Attend twice Aday").addClass("navbar-brand").show();
                             $("#sendmessage").hide();
                             found = 0;
@@ -98,22 +114,36 @@
                 var date = $(this).children("currentDate").text();
                 var id = $(this).children("employeeNo").text();
                 var leaveTime = $(this).children("leaveTime").text();
-
+                var arriveTime = $(this).children("arrivalTime").text();
                 if (dayDate == date && empId == id && leaveTime == 0) {
+                   // alert(id);
+                    //alert(leaveTime);
+                    //alert(date);
                     var lTme = aTime;
                     var leave = $(this).find("leaveTime").text(lTme);
+                    var presenceTime = timeToSeconds(arriveTime);
+                    var leavTime = timeToSeconds(lTme);
+                    var workPeriod = leavTime - presenceTime;
+                    var totalhours = secondsToTime(workPeriod);
+                    $(this).find("totalHours").text(totalhours);
                     $("#sendmessage").text("Your leaving data is set. Thank you").show();
                     $("#errormessage").hide();
                 }
-                else if (dayDate == date && empId == id && leave != 0) {
+                else if (dayDate == date && empId == id && leaveTime != 0) {
+                    //alert(id);
+                    //alert(leaveTime);
+                    //alert(date);
                     $("#errormessage").text("Employee named " + empName + " Can't Leave More than Once !!").show();
                     $("#sendmessage").hide();
                     return;
+
                 }
                 else {
-                    $("#errormessage").text("Employee named " + $("#empname").val() + " Has not attended So You Can't Save Leave Time for Him !!").show();
-                    $("#sendmessage").hide();
-                    return;
+                    if (empId == id) {
+                        $("#errormessage").text("Employee named " + empName + " Has not attended So You Can't Save Leave Time for Him !!").show();
+                        $("#sendmessage").hide();
+                        return;
+                    }
                 }
             });
         }
