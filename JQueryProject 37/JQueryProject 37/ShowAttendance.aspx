@@ -8,6 +8,9 @@
         .latecell {
             background-color:red;
         }
+        .tableDiv {
+            width:1200px;
+        }
     </style>
     <script src="JQuery/jquery.min.js"></script>
     <link href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" rel="stylesheet" />
@@ -19,7 +22,12 @@
                 $("#liattend").addClass("active");
                 $("#imgBannertext").html("Show Attendance");
                 //code
-                
+                function timeToSeconds(time) {
+                    timeArray = time.split(':')
+                    var minutes = (timeArray[0] * 60) + (timeArray[1] * 1);
+                    var seconds = (minutes * 60) + (timeArray[2] * 1);
+                    return seconds;
+                }
                 //*************************************************
                 var m;
                 $.ajax({
@@ -35,7 +43,6 @@
                 $('<table id="empData"><thead><tr><td>EmpID</td><td>EmpName</td><td>A.time</td><td>L.time</td><td>T.hours</td></tr></thead><tbody></tbody><tfoot></tfoot></table>').appendTo("#table_div");
                 $("#empData").hide();
                 $("#btn_Find").on("click", function (event) {
-                    $("#empData").DataTable();
                     var date = $("#date").val();
                     $(m).find("employee").each(function (index) {
                         var Xmldate = $.trim($(this).children("currentDate").text());
@@ -44,21 +51,26 @@
                         var empAtt = $.trim($(this).children("arrivalTime").text());
                         var empLeft = $.trim($(this).children("leaveTime").text());
                         var totalHours = $.trim($(this).children("totalHours").text());
-                        alert(date);
-                        alert(Xmldate);
+                        var latePoint = timeToSeconds("08:00:00");
+                        var employeeAttendTime = timeToSeconds(empAtt);
+                        var class1 = "latecell";
                         if (Xmldate == date) {
-                            $("<tr><td>" + empId + "</td><td>" + empName + "</td><td>" + empAtt + "</td><td>" + empLeft + "</td><td>" + totalHours + "</td></tr>").addClass("m").appendTo("#empData tbody");
-                            alert("true");
+                            if (employeeAttendTime > latePoint) {
+                                $("<tr><td>" + empId + "</td><td>" + empName + "</td><td class=" + class1 + ">" + empAtt + "</td><td>" + empLeft + "</td><td>" + totalHours + "</td></tr>").addClass("laterow").appendTo("#empData tbody");
+                            }
+                            else {
+                                $("<tr><td>" + empId + "</td><td>" + empName + "</td><td>" + empAtt + "</td><td>" + empLeft + "</td><td>" + totalHours + "</td></tr>").appendTo("#empData tbody");
+                            }
                         }
                         else {
                         }
-                        $(".dataTables_empty").remove();
-                        $("#empDate tbody tr").addClass("laterow");
-                        $(".m").addClass("laterow");
-                        $("#empData").show();
-
                     });
-
+                    $("#empData").DataTable();
+                    //$(".dataTables_empty").remove();
+                    //$("#empDate tbody tr").addClass("laterow");
+                    $(".laterow").addBack().css({ "background-color": "yellow" });
+                    $(".latecell").addBack().css({ "background-color": "red" })
+                    $("#empData").show();
                     
                    
                 });
@@ -71,7 +83,7 @@
             <input type="text" name="Date" class="form-control" id="date" />
             <button type="button" class="btn btn-skin btn-block" id="btn_Find">Find</button>
         </div>
-        <div id="table_div">
+        <div id="table_div" class="tableDiv">
 
         </div>
         
