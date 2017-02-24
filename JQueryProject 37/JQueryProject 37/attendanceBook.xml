@@ -1,3 +1,34 @@
 <attendanceBook>
-
+  <employee>
+    <currentDate>2017-02-24</currentDate>
+    <employeeNo>1</employeeNo>
+    <employeName>Mohamed Badr</employeName>
+    <arrivalTime>04:39:03</arrivalTime>
+    <leaveTime>04:41:02</leaveTime>
+    <totalHours>00:01:59</totalHours>
+  </employee>
+  <employee>
+    <currentDate>2017-02-24</currentDate>
+    <employeeNo>3</employeeNo>
+    <employeName>Sara Mohamed</employeName>
+    <arrivalTime>04:39:11</arrivalTime>
+    <leaveTime>04:39:29</leaveTime>
+    <totalHours>00:00:18</totalHours>
+  </employee>
+  <employee>
+    <currentDate>2017-02-24</currentDate>
+    <employeeNo>2</employeeNo>
+    <employeName>Ali Ahmed</employeName>
+    <arrivalTime>04:40:08</arrivalTime>
+    <leaveTime>04:40:16</leaveTime>
+    <totalHours>00:00:08</totalHours>
+  </employee>
+  <employee>
+    <currentDate>24/02/2017</currentDate>
+    <employeeNo>1</employeeNo>
+    <employeName>Mohamed Badr</employeName>
+    <arrivalTime>09:35:17</arrivalTime>
+    <leaveTime>09:35:24</leaveTime>
+    <totalHours>00:00:07</totalHours>
+  </employee>
 </attendanceBook>

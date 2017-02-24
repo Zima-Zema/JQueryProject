@@ -31,7 +31,7 @@ public partial class Save : System.Web.UI.Page
     [System.Web.Services.WebMethod]
     public static string GetCurrentDate()
     {
-        return DateTime.Now.ToString("yyyy-MM-dd");
+        return DateTime.Now.ToString("dd/MM/yyyy");
     }
 
 

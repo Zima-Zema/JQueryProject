@@ -94,7 +94,6 @@
                         var date = $.trim($(this).children("currentDate").text());
                         var id = $.trim($(this).children("employeeNo").text());
                         if (dayDate == date && empId == id) {
-                            alert(id);
                             $("#errormessage").text("Employee " + empName + " Can't Attend twice Aday").addClass("navbar-brand").show();
                             $("#sendmessage").hide();
                             found = 0;
@@ -116,9 +115,6 @@
                 var leaveTime = $(this).children("leaveTime").text();
                 var arriveTime = $(this).children("arrivalTime").text();
                 if (dayDate == date && empId == id && leaveTime == 0) {
-                   // alert(id);
-                    //alert(leaveTime);
-                    //alert(date);
                     var lTme = aTime;
                     var leave = $(this).find("leaveTime").text(lTme);
                     var presenceTime = timeToSeconds(arriveTime);
@@ -130,9 +126,6 @@
                     $("#errormessage").hide();
                 }
                 else if (dayDate == date && empId == id && leaveTime != 0) {
-                    //alert(id);
-                    //alert(leaveTime);
-                    //alert(date);
                     $("#errormessage").text("Employee named " + empName + " Can't Leave More than Once !!").show();
                     $("#sendmessage").hide();
                     return;
