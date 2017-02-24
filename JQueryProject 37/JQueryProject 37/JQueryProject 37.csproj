@@ -100,6 +100,7 @@
     <Content Include="EmployeeReport.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="JQuery\jquery.min.js" />
+    <Content Include="JQuery\ShowAttendance.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\custom.js" />
     <Content Include="js\employees.js" />
