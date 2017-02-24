@@ -2,12 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cph_forContent" runat="server">
     <style>
-        .laterow{
-            background-color:yellow;
-        }
-        .latecell {
-            background-color:red;
-        }
         .tableDiv {
             width:1200px;
         }
@@ -43,6 +37,7 @@
                 $('<table id="empData"><thead><tr><td>EmpID</td><td>EmpName</td><td>A.time</td><td>L.time</td><td>T.hours</td></tr></thead><tbody></tbody><tfoot></tfoot></table>').appendTo("#table_div");
                 $("#empData").hide();
                 $("#btn_Find").on("click", function (event) {
+                    $("#empData > tbody").empty();
                     var date = $("#date").val();
                     $(m).find("employee").each(function (index) {
                         var Xmldate = $.trim($(this).children("currentDate").text());
@@ -66,26 +61,21 @@
                         }
                     });
                     $("#empData").DataTable();
-                    //$(".dataTables_empty").remove();
-                    //$("#empDate tbody tr").addClass("laterow");
                     $(".laterow").addBack().css({ "background-color": "yellow" });
                     $(".latecell").addBack().css({ "background-color": "red" })
-                    $("#empData").show();
-                    
-                   
+                    $("#empData").show();     
                 });
-                
             });
         </script>
     <form id="form1" runat="server">
         
         <div id="content" class="text-center">
+            <asp:Label Text="Enter Date To Show Attenadance" runat="server" ForeColor="#669900" />
             <input type="text" name="Date" class="form-control" id="date" />
             <button type="button" class="btn btn-skin btn-block" id="btn_Find">Find</button>
         </div>
         <div id="table_div" class="tableDiv">
 
         </div>
-        
     </form>
 </asp:Content>
